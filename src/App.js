@@ -1,16 +1,15 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Link
 } from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About";
-const basename = "physicsBodyTool"
 function App() {
   return (
-    <Router basename={basename}>
+    <Router>
       <div style={{resize:"none"}}>
         <nav>
           <ul>
